@@ -78,6 +78,15 @@ def checkout(cart, coupons)
   apply_coupons(compact_cart, coupons)
   apply_clearance(compact_cart)
   
+  total = 0
+  i = 0 
+  while i < compact_cart.length do 
+    total += compact_cart[i][:price]
+    i += 1 
+  end
+  total
+  
+  
   # Consult README for inputs and outputs
   #
   # This method should call
