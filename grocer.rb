@@ -93,6 +93,5 @@ def checkout(cart, coupons)
   end 
   total = total.round(2)
   total 
-  
 end
 
