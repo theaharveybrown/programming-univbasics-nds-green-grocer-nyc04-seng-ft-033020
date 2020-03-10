@@ -84,6 +84,7 @@ def checkout(cart, coupons)
     total += compact_cart[i][:price]
     i += 1 
   end
+  total = total.round(2)
   total
   
   
