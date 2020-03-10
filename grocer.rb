@@ -64,11 +64,9 @@ end
 
 def apply_clearance(cart)
   i = 0
-  total = checkout(cart)
   while i < cart.length do 
-    if cart[i][:clearance] == true and total < 100
+    if cart[i][:clearance] == true
       cart[i][:price] *= 0.80
-    elseif 
     end
     i += 1
   end 
