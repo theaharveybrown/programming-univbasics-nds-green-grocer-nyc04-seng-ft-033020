@@ -81,10 +81,9 @@ def checkout(cart, coupons)
   total = 0
   i = 0 
   while i < compact_cart.length do 
-    total += compact_cart[i][:price]
+    total += (compact_cart[i][:price]).round(2)
     i += 1 
   end
-  total = total.round(2)
   total
   
   
